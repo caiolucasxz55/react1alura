@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Cabecalho from "@/components/Cabecalho/Cabecalho";
+import Footer from "@/components/Rodape/Footer";
+import { AuthProvider } from "@/context/AuthContext";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -12,8 +15,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html lang="pt-br">
+      <body>
+        <AuthProvider>
+
+        <Cabecalho/>
+        {children}
+        <Footer contatos={["exemploemail@.com","0000-87572"]} parcerias={["FIAP","CCR"]}/>
+        </AuthProvider>
+        </body>
     </html>
   );
 }
