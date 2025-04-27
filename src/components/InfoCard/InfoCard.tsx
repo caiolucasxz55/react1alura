@@ -1,6 +1,5 @@
 import { InfoCardProps } from "@/types/InfoCardProps";
 
-
 export default function InfoCard({ title, description }: InfoCardProps) {
     return (
       <section className="container-card">
