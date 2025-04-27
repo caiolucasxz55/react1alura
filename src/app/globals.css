@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
-/* Variáveis globais */
+/* Variáveis globais
 :root {
-  /* Paleta de cores principais */
+  
   --primary: #3563E9;
   --primary-light: #6590FF;
   --primary-dark: #1E45B8;
@@ -10,7 +10,7 @@
   --secondary-light: #FF9B9B;
   --secondary-dark: #D14040;
   
-  /* Cinzas neutros */
+ 
   --gray-50: #F9FAFB;
   --gray-100: #F2F4F7;
   --gray-200: #E4E7EC;
@@ -22,7 +22,7 @@
   --gray-800: #1D2939;
   --gray-900: #101828;
   
-  /* Espaçamentos */
+  
   --space-xs: 0.25rem;
   --space-sm: 0.5rem;
   --space-md: 1rem;
@@ -30,25 +30,25 @@
   --space-xl: 2rem;
   --space-2xl: 3rem;
   
-  /* Bordas arredondadas */
+  
   --radius-sm: 4px;
   --radius-md: 8px;
   --radius-lg: 12px;
   --radius-xl: 16px;
   --radius-full: 9999px;
   
-  /* Sombras */
+  
   --shadow-sm: 0 1px 2px rgba(16, 24, 40, 0.05);
   --shadow-md: 0 2px 4px rgba(16, 24, 40, 0.06), 0 4px 8px rgba(16, 24, 40, 0.1);
   --shadow-lg: 0 8px 16px rgba(16, 24, 40, 0.1), 0 4px 8px rgba(16, 24, 40, 0.08);
   
-  /* Transições */
+  
   --transition-fast: 0.15s ease;
   --transition-normal: 0.25s ease;
   --transition-slow: 0.4s ease;
 }
 
-/* Reset e estilos base */
+
 * {
   margin: 0;
   padding: 0;
@@ -79,7 +79,7 @@ ul {
   list-style: none;
 }
 
-/* Cabeçalho */
+
 .header {
   background-color: white;
   box-shadow: var(--shadow-md);
@@ -115,7 +115,7 @@ ul {
   border-radius: var(--radius-full);
 }
 
-/* Menu de navegação */
+
 .container-menu {
   margin-left: auto;
 }
@@ -143,7 +143,7 @@ ul {
   background-color: var(--gray-100);
 }
 
-/* Corpo principal */
+
 .container-body {
   max-width: 1100px;
   margin: var(--space-2xl) auto;
@@ -191,7 +191,7 @@ ul {
   text-decoration: none;
 }
 
-/* Formulários */
+
 .form {
   background-color: white;
   border-radius: var(--radius-lg);
@@ -250,7 +250,6 @@ ul {
   color: var(--gray-400);
 }
 
-/* Botões */
 .btn {
   margin-top: var(--space-md);
 }
@@ -278,7 +277,7 @@ ul {
   transform: translateY(0);
 }
 
-/* Rodapé */
+
 .footer {
   margin-top: auto;
   background-color: var(--gray-800);
@@ -315,7 +314,7 @@ ul {
   background-color: var(--primary-light);
 }
 
-/* Gradientes decorativos */
+
 .gradient-blob {
   position: absolute;
   z-index: -1;
@@ -340,7 +339,6 @@ ul {
   background: radial-gradient(circle, var(--secondary-light), transparent 70%);
 }
 
-/* Página de cadastro */
 .cadastro-container {
   display: flex;
   flex-direction: column;
@@ -367,7 +365,7 @@ ul {
   max-width: 600px;
 }
 
-/* Classes utilitárias */
+
 .text-center {
   text-align: center;
 }
@@ -396,7 +394,6 @@ ul {
   margin-bottom: var(--space-lg);
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
   .header {
     padding: var(--space-md);
@@ -436,4 +433,4 @@ ul {
   .form {
     padding: var(--space-lg);
   }
-}
+} */
