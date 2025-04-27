@@ -25,6 +25,7 @@ export const AuthProvider = ({children}: {children:React.ReactNode}) => {
             return true;
 
         }
+        document.cookie = "token=usuario-logado; path=/; max-age=36000";
         return false;
 
     };
@@ -42,6 +43,7 @@ export const AuthProvider = ({children}: {children:React.ReactNode}) => {
     const logout = ()=>{
         setUsuario(null);
         localStorage.removeItem("usuario");
+        document.cookie = "token=; path=/; max-age=0";
     };
 
     return(
