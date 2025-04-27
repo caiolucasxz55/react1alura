@@ -37,7 +37,7 @@ export default function Form(){
         const sucesso = login(data.email, data.senha);
         if (sucesso) {
           alert("Login realizado com sucesso!");
-          router.push("/"); 
+          router.push("/listagem"); 
           
         }else{
             alert("Credenciais inválidas");

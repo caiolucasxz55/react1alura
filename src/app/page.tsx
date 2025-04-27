@@ -11,10 +11,7 @@ export default function Home() {
         callToAction="Não tem uma conta? clique abaixo e cadastre-se"
         linkUrl="/cadastro "
         linkTexto="Cadastre-se"
-      />
-
-    <Corpo mensagem="Sempre dispostos a te ajudar!"
-    callToAction="Não tem uma conta? clique abaixo e cadastre-se" linkUrl="/cadastro" linkTexto="Cadastre-se" />    
+      />  
 
     </main>
   );

@@ -1,5 +1,6 @@
 // src/pages/listagem.tsx
 import React from "react";
+import Link from "next/link";
 
 const servicos = [
   "Serviços de Saúde e Reabilitação",
@@ -26,12 +27,8 @@ export default function Listagem() {
             className="bg-white p-6 rounded-lg shadow-lg w-72 text-center hover:shadow-xl transition"
           >
             <h2 className="text-xl font-semibold mb-4">{servico}</h2>
-            <a
-              href="/"
-              className="text-blue-500 hover:underline"
-            >
-              Ir para o serviço
-            </a>
+            <Link href="/"
+              className="text-blue-500 hover:underline">ir para serviço</Link>
           </div>
         ))}
       </div>
