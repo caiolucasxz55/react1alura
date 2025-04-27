@@ -9,7 +9,7 @@ export default function Cabecalho(){
             <Menu links={[{label:"Home",href:"/"},
                 {label:"Sobre-nós",href:"/about"},
                 {label:"Cadastro",href:"/cadastro"},
-                {label:"Listagem",href:"/listagem"},
+                
             ]}/>
         </header>
     );
