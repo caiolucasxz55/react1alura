@@ -1,5 +1,3 @@
-// src/app/listagem/denuncias/page.tsx
-
 import InfoCard from "@/components/InfoCard/InfoCard";
 import TextoPagina from "@/components/TextoPagina/TextoPagina";
 
@@ -22,8 +20,8 @@ export default function Acessibilidade() {
             description="Existem várias ferramentas e aplicativos que podem facilitar a mobilidade de pessoas com deficiência. Alguns aplicativos ajudam a planejar rotas acessíveis, mostrando as opções de transporte público adaptado e os melhores caminhos com calçadas niveladas e piso tátil. Além disso, aplicativos de mapas e navegação já têm recursos de acessibilidade, como informações sonoras e indicadores visuais de pontos acessíveis. Essas ferramentas tornam o dia a dia mais fácil e garantem que todos possam se deslocar pela cidade de forma mais autônoma e segura."
           />
           <InfoCard
-            title="Direitos"
-            description="Pessoas com deficiência têm uma série de direitos garantidos por lei quando o assunto é mobilidade. Isso inclui a gratuidade no transporte público, prioridade no embarque e a possibilidade de levar um acompanhante sem custos adicionais. Além disso, o transporte público deve ser adaptado, com veículos acessíveis e pontos de embarque/desembarque que atendam às necessidades de quem tem mobilidade reduzida. Também é importante lembrar que calçadas e faixas de pedestres devem ser adaptadas, permitindo que as pessoas com deficiência possam circular com segurança pela cidade."
+            title="Estruturas Urbanas Acessíveis"
+            description="A presença de infraestruturas acessíveis nas cidades é fundamental para a mobilidade de pessoas com deficiência. Rampas bem construídas, calçadas niveladas, pisos táteis, semáforos sonoros e sinalizações adaptadas garantem que todos possam circular de forma segura e independente. Investir em uma cidade mais acessível beneficia não apenas pessoas com deficiência, mas toda a população."
           />
         </div>
       </div>

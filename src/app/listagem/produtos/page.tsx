@@ -1,5 +1,3 @@
-// src/app/listagem/denuncias/page.tsx
-
 import InfoCard from "@/components/InfoCard/InfoCard";
 import TextoPagina from "@/components/TextoPagina/TextoPagina";
 
