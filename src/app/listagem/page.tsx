@@ -20,8 +20,9 @@ export default function Listagem() {
 
   useEffect(() => {
     const checkAuthentication = () => {
+      // Verifica se o cookie existe e armazena o resultado como booleano
       const token = document.cookie.includes("token=usuario-logado");
-
+      
       if (!token) {
         alert("Você precisa estar logado para acessar esta página!");
         router.push("/"); // Redireciona para a página principal
@@ -30,7 +31,12 @@ export default function Listagem() {
       }
     };
 
-    checkAuthentication();
+    // Adiciona um pequeno atraso para garantir que o DOM esteja completamente carregado
+    const timer = setTimeout(() => {
+      checkAuthentication();
+    }, 100);
+
+    return () => clearTimeout(timer);
   }, [router]);
 
   const handleLogout = () => {
@@ -39,6 +45,7 @@ export default function Listagem() {
     router.push("/"); // Redireciona para a página principal
   };
 
+  // Enquanto verifica a autenticação, pode mostrar um loader ou nada
   if (!isAuthenticated) {
     return null;
   }
@@ -68,7 +75,7 @@ export default function Listagem() {
         onClick={handleLogout}
         className="text-red-500 text-2xl font-bold mt-12 px-8 py-4 hover:bg-blue-100 hover:text-red-700 focus:outline-none focus:ring-4 focus:ring-blue-300 transition-all"
       >
-        Logout    dsdasdsad
+        Logout
       </button>
     </main>
   );
