@@ -1,3 +1,5 @@
+"use client";  // Adicione esta diretiva se usar hooks ou eventos
+
 import InfoCard from "@/components/InfoCard/InfoCard";
 import TextoPagina from "@/components/TextoPagina/TextoPagina";
 

@@ -20,12 +20,12 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
 
         if (user) {
             setUsuario(user);
-            localStorage.setItem("usuario", JSON.stringify(user)); // Corrigido: era "Usuario logado"
-            document.cookie = "token=usuario-logado; path=/; max-age=36000"; // Movido para dentro do if
+            localStorage.setItem("usuario", JSON.stringify(user)); 
+            document.cookie = "token=usuario-logado; path=/; max-age=36000"; 
             return true;
         }
         
-        return false; // Se não encontrar o usuário, retorna false sem definir o cookie
+        return false; 
     };
 
     const register = (novoUsuario: UsuarioProps) => {

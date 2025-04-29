@@ -1,4 +1,4 @@
-// src/pages/index.tsx
+
 import Corpo from "@/components/Corpo/Corpo";
 import React from "react";
 
