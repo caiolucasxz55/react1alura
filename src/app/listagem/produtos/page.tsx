@@ -8,7 +8,7 @@ export default function Produtos() {
       <div className="flex-1 flex flex-col items-center justify-center">
           <TextoPagina 
             title="Produtos e Tecnologia Assistiva" 
-            colorTitle="text-red-600"
+            colorTitle="text-blue-500"
             description="Canal sobre tecnologia assistiva e produtos que promovem acessibilidade para pessoas com deficiência." 
             colorDescription="text-gray-700"
           />

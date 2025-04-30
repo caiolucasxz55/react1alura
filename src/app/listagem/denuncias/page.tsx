@@ -1,4 +1,3 @@
-// src/app/listagem/denuncias/page.tsx
 "use client"; 
 import InfoCard from "@/components/InfoCard/InfoCard";
 import TextoPagina from "@/components/TextoPagina/TextoPagina";
@@ -9,7 +8,7 @@ export default function DenunciasPage() {
       <div className="flex-1 flex flex-col items-center justify-center">
           <TextoPagina 
             title="Denúncias e Reclamações" 
-            colorTitle="text-red-600"
+            colorTitle="text-blue-500"
             description="Canal de atendimento para receber denúncias e reclamações de pessoas com deficiência (PCD)." 
             colorDescription="text-gray-700"
           />

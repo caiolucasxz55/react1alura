@@ -8,7 +8,7 @@ export default function Emprego() {
       <div className="flex-1 flex flex-col items-center justify-center">
           <TextoPagina 
             title="Emprego e Profissionalização" 
-            colorTitle="text-red-600"
+            colorTitle="text-blue-500"
             description="Informações sobre emprego e profissionalização para inclusão de pessoas com deficiência no trabalho." 
             colorDescription="text-gray-700"
           />
