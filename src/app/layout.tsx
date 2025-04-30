@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Cabecalho from "@/components/Cabecalho/Cabecalho";
+
 import Footer from "@/components/Rodape/Footer";
 import { AuthProvider } from "@/context/AuthContext";
 
@@ -17,8 +17,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body>
-        <AuthProvider>
-        <Cabecalho/>
+        <AuthProvider>        
         {children}
         <Footer contatos={["exemploemail@.com","0000-87572"]} parcerias={["FIAP","CCR"]}/>
         </AuthProvider>

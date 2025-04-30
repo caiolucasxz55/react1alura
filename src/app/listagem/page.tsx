@@ -1,5 +1,6 @@
 "use client";
 
+import CabecalhoList from "@/components/Cabecalho/CabecalhoList";
 import Listagem from "@/components/Listagem/ListagemServicos";
 import type { LinkServico } from "@/types/LinkServico"; 
 
@@ -14,7 +15,11 @@ const servicos: LinkServico["links"] = [
   { nome: "Denúncias e Reclamações", href: "/listagem/denuncias" },
 ];
 
-
 export default function PaginaListagem() {
-  return <Listagem links={servicos} />;
+  return (
+    <>
+      <CabecalhoList />
+      <Listagem links={servicos} />
+    </>
+  );
 }

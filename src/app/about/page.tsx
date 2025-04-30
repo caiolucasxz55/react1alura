@@ -1,5 +1,9 @@
+import Cabecalho from "@/components/Cabecalho/Cabecalho";
+
 const AboutPage = () => {
   return (
+    <>
+    <Cabecalho/>
     <div className="container mx-auto px-4 py-8 flex flex-col items-center">
       <h1 className="text-2xl font-bold text-center mb-8">Sobre Nós</h1>
       <div className="max-w-3xl mx-auto bg-white rounded-lg shadow-md p-10">
@@ -13,6 +17,7 @@ const AboutPage = () => {
         </p>
       </div>
     </div>
+    </>
   );
 };
 
