@@ -20,12 +20,15 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
 
         if (user) {
             setUsuario(user);
+
+
             localStorage.setItem("usuario", JSON.stringify(user)); 
             document.cookie = "token=usuario-logado; path=/; max-age=36000"; 
             return true;
         }
         
         return false; 
+
     };
 
     const register = (novoUsuario: UsuarioProps) => {
@@ -38,6 +41,37 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
         return true;
     };
 
+    const atualizarUsuario = (dadosAtualizados: Partial<UsuarioProps>) => {
+        if (!usuario) return false;
+        
+        const lista: UsuarioProps[] = JSON.parse(localStorage.getItem("listaUsuarios") || "[]");
+        
+    
+        if (dadosAtualizados.email && dadosAtualizados.email !== usuario.email) {
+            const emailEmUso = lista.some(u => u.email === dadosAtualizados.email && u.id !== usuario.id);
+            if (emailEmUso) return false;
+        }
+        
+    
+        const listaAtualizada = lista.map(u => {
+            if (u.id === usuario.id) {
+                const usuarioAtualizado = {
+                    ...u,
+                    ...dadosAtualizados
+                };
+      
+                setUsuario(usuarioAtualizado);
+                localStorage.setItem("usuario", JSON.stringify(usuarioAtualizado));
+                return usuarioAtualizado;
+            }
+            return u;
+        });
+        
+        
+        localStorage.setItem("listaUsuarios", JSON.stringify(listaAtualizada));
+        return true;
+    };
+
     const logout = () => {
         setUsuario(null);
         localStorage.removeItem("usuario");
@@ -45,7 +79,14 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
     };
 
     return (
-        <AuthContext.Provider value={{ usuario, login, logout, register }}>
+        <AuthContext.Provider value={{ 
+            usuario, 
+            login, 
+            logout, 
+            register, 
+            cadastrar: register,
+            atualizarUsuario 
+        }}>
             {children}
         </AuthContext.Provider>
     );
