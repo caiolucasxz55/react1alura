@@ -62,4 +62,3 @@ export default function Form(){
 }
 
 
-// tarefas.map(item => <p> {item.tarefa} </p>)

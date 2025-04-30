@@ -20,12 +20,15 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
 
         if (user) {
             setUsuario(user);
-            localStorage.setItem("usuario", JSON.stringify(user));
-            document.cookie = "token=usuario-logado; path=/; max-age=36000";
+
+
+            localStorage.setItem("usuario", JSON.stringify(user)); 
+            document.cookie = "token=usuario-logado; path=/; max-age=36000"; 
             return true;
         }
         
-        return false;
+        return false; 
+
     };
 
     const register = (novoUsuario: UsuarioProps) => {
