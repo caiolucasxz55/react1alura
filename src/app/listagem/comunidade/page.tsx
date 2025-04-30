@@ -1,14 +1,18 @@
 "use client"; 
+
+import CabecalhoGeral from "@/components/Cabecalho/CabecalhoGeral";
 import InfoCard from "@/components/InfoCard/InfoCard";
 import TextoPagina from "@/components/TextoPagina/TextoPagina";
 
 export default function Comunidades() {
   return (
+    <>
+    <CabecalhoGeral/>
     <div className="min-h-screen bg-gray-50 flex flex-col p-6">
       <div className="flex-1 flex flex-col items-center justify-center">
           <TextoPagina 
             title="Comunidades e Apoio Psicológico" 
-            colorTitle="text-red-600"
+            colorTitle="text-blue-500"
             description="Canal de informações sobre grupo de apoio e apoio psicológico para pessoas com deficiência." 
             colorDescription="text-gray-700"
           />
@@ -28,5 +32,6 @@ export default function Comunidades() {
       </div>
 
     </div>
+    </>
   );
 }

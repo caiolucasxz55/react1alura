@@ -1,5 +1,6 @@
 "use client";
 
+import CabecalhoList from "@/components/Cabecalho/CabecalhoList";
 import Listagem from "@/components/Listagem/ListagemServicos";
 import CabecalhoList from "@/components/CabecalhoList/CabecalhoList";
 import type { LinkServico } from "@/types/LinkServico"; 
@@ -23,3 +24,4 @@ export default function PaginaListagem() {
     </>
   );
 }
+

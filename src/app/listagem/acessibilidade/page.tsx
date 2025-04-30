@@ -1,15 +1,18 @@
-"use client";  // Adicione esta diretiva se usar hooks ou eventos
+"use client"; 
 
+import CabecalhoGeral from "@/components/Cabecalho/CabecalhoGeral";
 import InfoCard from "@/components/InfoCard/InfoCard";
 import TextoPagina from "@/components/TextoPagina/TextoPagina";
 
 export default function Acessibilidade() {
   return (
+    <>
+    <CabecalhoGeral/>
     <div className="min-h-screen bg-gray-50 flex flex-col p-6">
       <div className="flex-1 flex flex-col items-center justify-center">
           <TextoPagina 
             title="Acessibilidade Urbana e Mobilidade" 
-            colorTitle="text-red-600"
+            colorTitle="text-blue-500"
             description="Canal de informações sobre a acessibilidade urbana e mobilidade para pessoas com deficiência." 
             colorDescription="text-gray-700"
           />
@@ -29,5 +32,6 @@ export default function Acessibilidade() {
       </div>
 
     </div>
+    </>
   );
 }

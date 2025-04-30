@@ -1,14 +1,17 @@
 "use client"; 
+import CabecalhoGeral from "@/components/Cabecalho/CabecalhoGeral";
 import InfoCard from "@/components/InfoCard/InfoCard";
 import TextoPagina from "@/components/TextoPagina/TextoPagina";
 
 export default function Emprego() {
   return (
+    <>
+    <CabecalhoGeral/>
     <div className="min-h-screen bg-gray-50 flex flex-col p-6">
       <div className="flex-1 flex flex-col items-center justify-center">
           <TextoPagina 
             title="Emprego e Profissionalização" 
-            colorTitle="text-red-600"
+            colorTitle="text-blue-500"
             description="Informações sobre emprego e profissionalização para inclusão de pessoas com deficiência no trabalho." 
             colorDescription="text-gray-700"
           />
@@ -28,5 +31,6 @@ export default function Emprego() {
       </div>
 
     </div>
+    </>
   );
 }

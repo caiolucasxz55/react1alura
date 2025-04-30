@@ -84,7 +84,6 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
             login, 
             logout, 
             register, 
-            cadastrar: register,
             atualizarUsuario 
         }}>
             {children}
