@@ -19,7 +19,7 @@ export default function RootLayout({
       <body>
         <AuthProvider>        
         {children}
-        <Footer contatos={["exemploemail@.com","0000-87572"]} parcerias={["FIAP","CCR"]}/>
+        <Footer contatos={["exemploemail@.com","0000-87572"]} parcerias={["FIAP"]}/>
         </AuthProvider>
         </body>
     </html>

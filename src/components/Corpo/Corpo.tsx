@@ -17,7 +17,7 @@ export default function Corpo(props: CorpoProps) {
         <Form />
       </div>
       <div className="w-full flex flex-col items-center mt-6">
-        <p className="text-lg text-gray-700 mb-4 text-center">{props.callToAction}</p>
+        <p className="text-lg text-gray-700 mb-8 text-center">{props.callToAction}</p>
         <Link
           className="inline-block bg-blue-500 text-white font-semibold py-4 px-6 rounded-full transition-all duration-300 ease-in-out shadow-sm hover:bg-blue-600 hover:shadow-md hover:transform hover:-translate-y-0.5"
           href={props.linkUrl}

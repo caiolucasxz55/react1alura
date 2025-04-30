@@ -9,8 +9,7 @@ export default function Footer({contatos,parcerias}:FooterProps){
             </div>
             <div className="flex flex-col gap-2">
                 <p className="font-semibold text-white text-lg mb-4 relative after:content-[''] after:absolute after:left-0 md:after:left-1/2 md:after:-translate-x-1/2 after:bottom-[-8px] after:w-10 after:h-0.5 after:bg-blue-400">Parcerias:</p>
-                {parcerias.map((p,i:number)=> <p key={i}>{p}</p>)}
-              
+                {parcerias.map((p,i:number)=> <p key={i}>{p}</p>)}     
             </div>
         </footer>
     );
