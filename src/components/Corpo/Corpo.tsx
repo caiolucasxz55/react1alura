@@ -25,14 +25,7 @@ export default function Corpo(props: CorpoProps) {
           {props.linkTexto}
         </Link>
 
-        {usuario && (
-          <Link
-            className="inline-block bg-blue-500 text-white font-semibold py-4 px-6 rounded-full transition-all duration-300 ease-in-out shadow-sm hover:bg-blue-600 hover:shadow-md hover:transform hover:-translate-y-0.5 mt-4"
-            href="/atualizar-cadastro"
-          >
-            Atualizar Cadastro
-          </Link>
-        )}
+
       </div>
     </section>
   );
