@@ -1,8 +1,37 @@
 "use client"; 
 import InfoCard from "@/components/InfoCard/InfoCard";
 import TextoPagina from "@/components/TextoPagina/TextoPagina";
+import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 
 export default function Produtos() {
+
+  const router = useRouter();
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+ 
+  useEffect(() => {
+    const checkAuthentication = () => {
+      const token = document.cookie.includes("token=usuario-logado");
+ 
+      if (!token) {
+        alert("Você precisa estar logado para acessar esta página!");
+        router.push("/");
+      } else {
+        setIsAuthenticated(true);
+      }
+    };
+ 
+    const timer = setTimeout(() => {
+      checkAuthentication();
+    }, 100);
+ 
+    return () => clearTimeout(timer);
+  }, [router]);
+ 
+  if (!isAuthenticated) {
+    return null;
+  }
+  
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col p-6">
       <div className="flex-1 flex flex-col items-center justify-center">
