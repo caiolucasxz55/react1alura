@@ -3,8 +3,40 @@
 import CabecalhoGeral from "@/components/Cabecalho/CabecalhoGeral";
 import InfoCard from "@/components/InfoCard/InfoCard";
 import TextoPagina from "@/components/TextoPagina/TextoPagina";
+import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
+
+import Image from "next/image";
+
 
 export default function Acessibilidade() {
+
+  const router = useRouter();
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+ 
+  useEffect(() => {
+    const checkAuthentication = () => {
+      const token = document.cookie.includes("token=usuario-logado");
+ 
+      if (!token) {
+        alert("Você precisa estar logado para acessar esta página!");
+        router.push("/");
+      } else {
+        setIsAuthenticated(true);
+      }
+    };
+ 
+    const timer = setTimeout(() => {
+      checkAuthentication();
+    }, 100);
+ 
+    return () => clearTimeout(timer);
+  }, [router]);
+ 
+  if (!isAuthenticated) {
+    return null;
+  }
+  
   return (
     <>
     <CabecalhoGeral/>
@@ -16,6 +48,16 @@ export default function Acessibilidade() {
             description="Canal de informações sobre a acessibilidade urbana e mobilidade para pessoas com deficiência." 
             colorDescription="text-gray-700"
           />
+      </div>
+
+      <div className="relative w-full h-[400px]">
+        <Image
+          src="/images/elevador2.jpg"
+          alt="Imagem de um elevador de acesso para cadeirantes"
+          fill
+          className="object-contain"
+          priority
+        />
       </div>
 
       <div className="flex-1 flex items-center justify-center px-4">
