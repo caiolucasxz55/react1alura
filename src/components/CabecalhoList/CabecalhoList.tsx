@@ -24,7 +24,7 @@ export default function CabecalhoList() {
       <div className="flex items-center gap-4">
         <Menu
           links={[
-            { label: "Home", href: "/" },
+            
             { label: "Sobre-nós", href: "/about" },
             { label: "Atualizar Dados", href: "/atualizar-cadastro" },
           ]}
