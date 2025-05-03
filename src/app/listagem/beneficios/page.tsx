@@ -5,6 +5,9 @@ import TextoPagina from "@/components/TextoPagina/TextoPagina";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 
+import Image from "next/image";
+
+
 export default function DenunciasPage() {
 
   const router = useRouter();
@@ -46,6 +49,16 @@ export default function DenunciasPage() {
           />
       </div>
 
+      <div className="relative w-full h-[400px]">
+        <Image
+          src="/images/diretos.jpg"
+          alt="Imagem de 6 mãos segurando os braços de uma das outras, formando uma união e um circulo, com o texto 'Direitos para PCD' "
+          fill
+          className="object-contain"
+          priority
+        />
+      </div>
+    
       <div className="flex-1 flex items-center justify-center px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <InfoCard

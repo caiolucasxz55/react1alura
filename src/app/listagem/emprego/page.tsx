@@ -5,6 +5,9 @@ import TextoPagina from "@/components/TextoPagina/TextoPagina";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 
+import Image from "next/image";
+
+
 export default function Emprego() {
 
   const router = useRouter();
@@ -44,6 +47,16 @@ export default function Emprego() {
             description="Informações sobre emprego e profissionalização para inclusão de pessoas com deficiência no trabalho." 
             colorDescription="text-gray-700"
           />
+      </div>
+
+      <div className="relative w-full h-[400px]">
+        <Image
+          src="/images/beneficios.jpg"
+          alt="Imagem de uma pessoa cadeirante trabalhando em um escritório"
+          fill
+          className="object-contain"
+          priority
+        />
       </div>
 
       <div className="flex-1 flex items-center justify-center px-4">

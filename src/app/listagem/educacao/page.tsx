@@ -5,6 +5,9 @@ import TextoPagina from "@/components/TextoPagina/TextoPagina";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 
+import Image from "next/image";
+
+
 export default function DenunciasPage() {
 
   const router = useRouter();
@@ -44,6 +47,16 @@ export default function DenunciasPage() {
             description="Informações sobre educação inclusiva para pessoas com deficiência em todos os níveis de ensino" 
             colorDescription="text-gray-700"
           />
+      </div>
+
+      <div className="relative w-full h-[400px]">
+        <Image
+          src="/images/educacao.jpg"
+          alt="Imagem de um grupo de crianças, incluindo uma criança cadeirante, em uma sala de aula, com um professor ensinando"
+          fill
+          className="object-contain"
+          priority
+        />
       </div>
 
       <div className="flex-1 flex items-center justify-center px-4">

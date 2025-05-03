@@ -5,6 +5,9 @@ import TextoPagina from "@/components/TextoPagina/TextoPagina";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 
+import Image from "next/image";
+
+
 export default function Produtos() {
 
   const router = useRouter();
@@ -44,6 +47,16 @@ export default function Produtos() {
             description="Canal sobre tecnologia assistiva e produtos que promovem acessibilidade para pessoas com deficiência." 
             colorDescription="text-gray-700"
           />
+      </div>
+
+      <div className="relative w-full h-[400px]">
+        <Image
+          src="/images/teclado.jpg"
+          alt="Imagem de um teclado adaptado para pessoas com deficiência visual"
+          fill
+          className="object-contain"
+          priority
+        />
       </div>
 
       <div className="flex-1 flex items-center justify-center px-4">

@@ -5,6 +5,8 @@ import TextoPagina from "@/components/TextoPagina/TextoPagina";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 
+import Image from "next/image";
+
 export default function DenunciasPage() {
 
   const router = useRouter();
@@ -44,6 +46,16 @@ export default function DenunciasPage() {
             description="Canal de atendimento para receber denúncias e reclamações de pessoas com deficiência (PCD)." 
             colorDescription="text-gray-700"
           />
+      </div>
+
+      <div className="relative w-full h-[400px]">
+        <Image
+          src="/images/denuncia.jpg"
+          alt="Imagem de uma pessoa deficiente fazendo uma denúncia com um profissional"
+          fill
+          className="object-contain"
+          priority
+        />
       </div>
 
       <div className="flex-1 flex items-center justify-center px-4">
