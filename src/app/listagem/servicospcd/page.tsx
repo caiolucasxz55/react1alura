@@ -2,6 +2,8 @@
 import CabecalhoGeral from "@/components/Cabecalho/CabecalhoGeral";
 import InfoCard from "@/components/InfoCard/InfoCard";
 import TextoPagina from "@/components/TextoPagina/TextoPagina";
+import Image from "next/image";
+
 
 export default function DenunciasPage() {
   return (
@@ -15,6 +17,16 @@ export default function DenunciasPage() {
             description="Informações sobre serviços de saúde e reabilitação voltados para o bem-estar e a inclusão de pessoas com deficiência." 
             colorDescription="text-gray-700"
           />
+      </div>
+
+      <div className="relative w-full h-[400px]">
+        <Image
+          src="/images/fisio.jpg"
+          alt="Imagem de um profissional de saúde fazendo exercícios uma pessoa cadeirante"
+          fill
+          className="object-contain"
+          priority
+        />
       </div>
 
       <div className="flex-1 flex items-center justify-center px-4">

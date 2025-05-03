@@ -5,6 +5,7 @@ import InfoCard from "@/components/InfoCard/InfoCard";
 import TextoPagina from "@/components/TextoPagina/TextoPagina";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 export default function Comunidades() {
 
@@ -45,6 +46,16 @@ export default function Comunidades() {
             description="Canal de informações sobre grupo de apoio e apoio psicológico para pessoas com deficiência." 
             colorDescription="text-gray-700"
           />
+      </div>
+
+      <div className="relative w-full h-[400px]">
+        <Image
+          src="/images/apoio.jpg"
+          alt="Imagem de um grupo de pessoas com deficiência em um círculo de conversa e apoio"
+          fill
+          className="object-contain"
+          priority
+        />
       </div>
 
       <div className="flex-1 flex items-center justify-center px-4">

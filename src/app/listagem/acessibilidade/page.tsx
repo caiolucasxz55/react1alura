@@ -5,6 +5,7 @@ import InfoCard from "@/components/InfoCard/InfoCard";
 import TextoPagina from "@/components/TextoPagina/TextoPagina";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 export default function Acessibilidade() {
 
@@ -45,6 +46,16 @@ export default function Acessibilidade() {
             description="Canal de informações sobre a acessibilidade urbana e mobilidade para pessoas com deficiência." 
             colorDescription="text-gray-700"
           />
+      </div>
+
+      <div className="relative w-full h-[400px]">
+        <Image
+          src="/images/elevador2.jpg"
+          alt="Imagem de um elevador de acesso para cadeirantes"
+          fill
+          className="object-contain"
+          priority
+        />
       </div>
 
       <div className="flex-1 flex items-center justify-center px-4">
