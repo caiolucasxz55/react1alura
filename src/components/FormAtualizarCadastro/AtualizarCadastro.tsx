@@ -87,10 +87,11 @@ export default function FormAtualizarCadastro({ titulo, botaoTexto }: Formulario
           <p className="text-red-500 text-sm mb-4">{errors.email.message}</p>
         )}
 
-        <label className="text-sm font-medium text-gray-700 mb-1" htmlFor="senha">
-          Nova Senha (deixe em branco para manter a atual):
+        <label className="text-sm font-medium text-gray-700 mb-1" htmlFor="senha" >
+          Nova Senha (obrigatorio):
         </label>
         <input
+          required
           className="p-4 border border-gray-300 rounded-md text-base mb-6 transition-all duration-300 ease-in-out focus:outline-none focus:border-blue-600 focus:ring-3 focus:ring-blue-600/15 placeholder:text-gray-400"
           type="password"
           id="senha"
