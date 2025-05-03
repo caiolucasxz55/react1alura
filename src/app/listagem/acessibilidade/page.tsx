@@ -5,7 +5,9 @@ import InfoCard from "@/components/InfoCard/InfoCard";
 import TextoPagina from "@/components/TextoPagina/TextoPagina";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
+
 import Image from "next/image";
+
 
 export default function Acessibilidade() {
 
