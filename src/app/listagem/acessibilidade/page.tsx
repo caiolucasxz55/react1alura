@@ -1,5 +1,6 @@
 "use client"; 
 
+import CabecalhoGeral from "@/components/Cabecalho/CabecalhoGeral";
 import InfoCard from "@/components/InfoCard/InfoCard";
 import TextoPagina from "@/components/TextoPagina/TextoPagina";
 import { useEffect, useState } from "react";
@@ -34,6 +35,8 @@ export default function Acessibilidade() {
   }
   
   return (
+    <>
+    <CabecalhoGeral/>
     <div className="min-h-screen bg-gray-50 flex flex-col p-6">
       <div className="flex-1 flex flex-col items-center justify-center">
           <TextoPagina 
@@ -58,5 +61,6 @@ export default function Acessibilidade() {
       </div>
 
     </div>
+    </>
   );
 }
